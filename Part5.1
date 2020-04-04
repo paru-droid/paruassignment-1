@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int age(int age1,int age2,int age3){
+  
+
+int pension;
+
+  
+if(age1>=age2 && age1>=age3){
+  pension=10000;
+
+}else if(age1>=age3 && age1<age2){
+ 
+
+  pension=5000;
+}else{
+  pension=0;
+}
+return pension;
+}
+
+int main()
+{
+  printf("%d",age(59,60,50));
+  return 0;
+}
