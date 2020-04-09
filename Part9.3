@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  char main[100];
+  char sub[50];
+  char result;
+  
+  printf("Enter main string:");
+  gets(main);
+  printf("Enter sub string:");
+  gets(sub);
+  result =strstr(main,sub);
+  if(result){
+    printf("Substring found");
+  }else{
+    printf("Not found");
+  }
+  
+  return 0;
+}
