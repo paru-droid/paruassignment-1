@@ -1,0 +1,14 @@
+int main()
+{
+  char string[50];
+  int i;
+  printf("\nEnter a string:");
+  gets(string);
+  for(i=0; string [i]!=0;i++){
+    if(string[i]>=65 && string[i]<=90)
+    string[i]=string[i] +32;
+  else string[i]=string[i]-32;
+  }
+  printf("Result is %s", string);
+  return 0;
+}
