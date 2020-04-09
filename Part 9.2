@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  
+  char string[50];
+  int i,a=0,d=0,s=0;
+  printf("\nEnter a string:");
+  gets(string);
+  for(i=0; string [i]!=0;i++){
+    if(string[i]>=65 && string[i]<=122)
+    a++;
+    else if(string[i]>=48 && string[i]<=57)
+    d++;
+  else 
+  s++;
+  }
+  printf("No.of alphabets=%d\n",a);
+  printf("No.of digits=%d\n",d);
+  printf("No.of special characters=%d\n",s);
+  return 0;
+}
+  
