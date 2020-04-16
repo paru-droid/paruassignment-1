@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  printf("1 2 4 7\n");
+  printf("3 5 8 11\n");
+  printf("6 9 12 14\n");
+  printf("10 13 15 16\n");
+ 
+  return 0;
+}
