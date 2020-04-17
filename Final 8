@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  int a[10][10];
+  int m,n,i,j,f=0;
+  printf("Enter order of matrix:\n");
+  scanf("%d%d",&m,&n);
+  
+  printf("Enter elements...\n");
+  for(i=0;i<m;i++){
+    for(j=0;j<n;j++){
+      scanf("%d",&a[i][j]);
+        }
+        }
+        for(i=0;i<m;i++){
+    for(j=0;j<n;j++){
+      if(i==j&& a[i][j]!=1)
+      {
+        f=1;
+        break;
+      } else if(i!=j&&a[i][j]!=0){
+        
+        f=1;
+        break;
+      }
+      }
+      }
+      if(f==0){
+     printf("Matrix is identity matrix");
+      }
+      else{
+        printf("Not an identity matrix");
+      }
+    
+ 
+return 0;
+      
+  
+  
+}
